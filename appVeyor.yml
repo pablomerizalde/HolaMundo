@@ -2,7 +2,9 @@ version: 1.0.{build}
 image: Visual Studio 2015
 configuration: Relase
 platform: x64
-build:
+init:
 - cmd: choco upgrade chocolatey
+install:
 - cmd: choco install gcc
+build:
 - cmd: dir
