@@ -1,0 +1,11 @@
+- cmd : choco upgrade chocolatey
+
+- cmd : choco install gcc
+
+before_build:
+
+- cmd : cd "c:/pablomerizalde/HolaMundo"
+
+build:
+- cmd : gcc -o ejecutable.exe helloworld.c
+- cmd : ejecutable.ex
