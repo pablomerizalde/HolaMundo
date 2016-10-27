@@ -9,5 +9,3 @@ before_build:
 - cmd: cd src
 - cmd: dir
 - cmd: tcc -run helloworld.c
-build:
-parallel: false
