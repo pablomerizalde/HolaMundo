@@ -7,5 +7,4 @@ install:
 - cmd: choco install tinycc
 before_build:
 - cmd: cd src
-- cmd: tcc -o exp helloworld.c
-- cmd: exp.exe
+- cmd: tcc -run helloworld.c
