@@ -1,5 +1,4 @@
 version: 1.0.{build}
-image: Visual Studio 2015
 configuration: Relase
 platform: x64
 init:
@@ -7,4 +6,7 @@ init:
 install:
 - cmd: choco install tinycc
 before_build:
-- cmd: dir
+- cmd: cd scr
+build:-
+- cmd: tcc -o exp helloworld.c
+- md: -/exp
