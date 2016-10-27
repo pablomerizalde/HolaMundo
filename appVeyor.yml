@@ -1,0 +1,7 @@
+- cmd : choco upgrade chocolatey
+
+- cmd : choco install gcc
+
+before_build:
+
+- cmd : dir
