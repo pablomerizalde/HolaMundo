@@ -1,5 +1,5 @@
-- cmd : choco upgrade chocolatey
+- cmd: choco upgrade chocolatey
 
-- cmd : choco install gcc
+- cmd: choco install gcc
 
-- cmd : dir
+- cmd: dir
