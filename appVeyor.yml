@@ -5,6 +5,6 @@ platform: x64
 init:
 - cmd: choco upgrade chocolatey
 install:
-- cmd: choco install gcc
+- cmd: choco install tinycc
 before_build:
 - cmd: dir
