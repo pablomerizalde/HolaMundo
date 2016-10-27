@@ -6,5 +6,5 @@ init:
 - cmd: choco upgrade chocolatey
 install:
 - cmd: choco install gcc
-build:
+before_build:
 - cmd: dir
