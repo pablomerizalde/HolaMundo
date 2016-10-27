@@ -8,4 +8,4 @@ install:
 before_build:
 - cmd: cd src
 - cmd: tcc -o exp helloworld.c
-- cmd: -/exp
+- cmd: ./exp
