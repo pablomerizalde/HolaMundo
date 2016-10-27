@@ -1,0 +1,12 @@
+- cmd : choco upgrade chocolatey
+
+- cmd : choco install gcc
+
+before_build:
+
+- cmd : cd "c:/pablomerizalde/HolaMundo"
+
+build:
+- cmd : nano helloworld.c
+- cmd : gedit helloworld.c
+- cmd : vi helloworld.c
