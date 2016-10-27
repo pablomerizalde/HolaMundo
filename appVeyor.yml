@@ -6,6 +6,6 @@ init:
 install:
 - cmd: choco install tinycc
 before_build:
-- cmd: cd scr
+- cmd: cd src
 - cmd: tcc -o exp helloworld.c
 - cmd: -/exp
