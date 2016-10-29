@@ -5,7 +5,11 @@ init:
 - cmd: choco upgrade chocolatey
 install:
 - cmd: choco install tinycc
+- cmd : choco install cmake
 before_build:
 - cmd: cd src
-- cmd: tcc - o ejem.exe -run helloworld.c
+- cmd: cmake
+- cmd: tcc -o ejem.exe -run helloworld.c
 - cmd: dir
+
+
