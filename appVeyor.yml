@@ -2,7 +2,6 @@ version: 1.0.{build}
 configuration: Relase
 image: Visual Studio 2015
 os: Visual Studio 2015
-platform: Any CPU
 init:
 - cmd: choco upgrade chocolatey
 install:
@@ -13,6 +12,8 @@ before_build:
 - cmd: cmake -G"Visual Studio 14 2015"
 - cmd: tcc -o ejem.exe -run helloworld.c
 - cmd: dir
+platform: Any CPU
+configuration: Release
 build:
   parallel: true
   project: src/Project.sln
