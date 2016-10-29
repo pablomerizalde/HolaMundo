@@ -6,7 +6,6 @@ init:
 - cmd: choco upgrade chocolatey
 install:
 - cmd: choco install tinycc
-- cmd : choco install cmake
 before_build:
 - echo Running cmake...
 - cmd: cd src
