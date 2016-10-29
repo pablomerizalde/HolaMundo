@@ -2,7 +2,7 @@ version: 1.0.{build}
 configuration: Relase
 image: Visual Studio 2015
 os: Visual Studio 2015
-
+platform: Any CPU
 init:
 - cmd: choco upgrade chocolatey
 install:
