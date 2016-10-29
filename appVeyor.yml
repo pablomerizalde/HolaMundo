@@ -8,7 +8,8 @@ install:
 - cmd : choco install cmake
 before_build:
 - cmd: cd src
-- cmd: cmake .
+- cmd: cmake -H. -Bbuild
+- cmd: cmake --build build -- -j3
 - cmd: more Makefile
 - cmd: make
 - cmd: tcc -o ejem.exe -run helloworld.c
