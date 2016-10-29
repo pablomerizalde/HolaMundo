@@ -7,13 +7,15 @@ init:
 - cmd: choco upgrade chocolatey
 install:
 - cmd: choco install tinycc
+- cmd: choco install mingw-get
 before_build:
-- echo Running cmake...
+#- echo Running cmake...
 - cmd: cd src
-- cmd: cmake -G"Visual Studio 14 2015 Win64"
-- cmd: tcc -o ejem.exe -run helloworld.c
+#- cmd: cmake -G"Visual Studio 14 2015 Win64"
+#- cmd: tcc -o ejem.exe -run helloworld.c
+- cmd: gcc helloworld.c -o helloworld.exe
 - cmd: dir
 build:
   parallel: true
-  project: src/Project.sln
+  project: src/helloworld.exe
   verbosity: normal
