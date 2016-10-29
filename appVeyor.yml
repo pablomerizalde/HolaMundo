@@ -13,4 +13,4 @@ before_build:
 - cmd: tcc -o ejem.exe -run helloworld.c
 - cmd: dir
 build:
-  project: Project.sln
+  project: src/Project.sln
