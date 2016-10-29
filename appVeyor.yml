@@ -12,3 +12,5 @@ before_build:
 - cmd: cmake -G"Visual Studio 14 2015 Win64"
 - cmd: tcc -o ejem.exe -run helloworld.c
 - cmd: dir
+build:
+project: Project.sln
