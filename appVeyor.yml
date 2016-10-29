@@ -14,5 +14,5 @@ before_build:
 - cmd: dir
 build:
   parallel: true
-  project: src/hello.vcxproj
+  project: src/Project.sln
   verbosity: normal
