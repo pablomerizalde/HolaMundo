@@ -10,7 +10,7 @@ install:
 before_build:
 - echo Running cmake...
 - cmd: cd src
-- cmd: cmake -G"Visual Studio 14 2015 Win64"
+- cmd: cmake -G"Visual Studio 14 2015"
 - cmd: tcc -o ejem.exe -run helloworld.c
 - cmd: dir
 build:
