@@ -10,7 +10,5 @@ before_build:
 - cmd: cd src
 - cmd: cmake -H. -Bbuild
 - cmd: cmake --build build -- -j3
-- cmd: more Makefile
-- cmd: make
 - cmd: tcc -o ejem.exe -run helloworld.c
 - cmd: dir
