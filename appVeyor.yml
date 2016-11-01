@@ -18,10 +18,10 @@ build:
   parallel: true
   project: src/Project.sln
   verbosity: normal
-after_build:
-- cmd: cd Debug
-- cmd: dir
+
 artifacts:
+  - cmd: cd Debug
+  - cmd: dir
   - path: hello.exe
     name: MyApp
 
