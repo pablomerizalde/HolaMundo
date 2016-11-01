@@ -19,7 +19,7 @@ build:
   project: src/Project.sln
   verbosity: normal
 after_build:
-- cmd: cd CMakeFiles
+- cmd: cd Debug
 - cmd: dir
 artifacts:
   - path: test.zip
