@@ -18,6 +18,8 @@ build:
   parallel: true
   project: src/Project.sln
   verbosity: normal
+after_build:
+ -cmd: dir
 artifacts:
   - path: test.zip
     name: MyApp
