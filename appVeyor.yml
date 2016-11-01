@@ -22,7 +22,7 @@ after_build:
 - cmd: cd Debug
 - cmd: dir
 artifacts:
-  - path: test.zip
+  - path: hello.exe
     name: MyApp
 
   - path: logs
