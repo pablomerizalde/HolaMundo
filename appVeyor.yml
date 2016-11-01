@@ -21,4 +21,7 @@ build:
 after_build:
   - cmd: cd Debug
   - cmd: dir
+artifacts:
+- path: C:\projects\holamundo\src\Debug\hello.exe
+  name: hello
 
