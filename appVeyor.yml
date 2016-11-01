@@ -16,5 +16,5 @@ before_build:
 - cmd: dir
 build:
   parallel: true
-  project: src/helloworld.exe
+  project: src/Project.sln
   verbosity: normal
