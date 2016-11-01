@@ -23,5 +23,5 @@ after_build:
   - cmd: dir
 artifacts:
 - path: C:\projects\holamundo\src\Debug\hello.exe
-  name: hello
-  type: auto
+ name: hello
+ type: auto
