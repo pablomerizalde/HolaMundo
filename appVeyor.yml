@@ -18,3 +18,10 @@ build:
   parallel: true
   project: src/Project.sln
   verbosity: normal
+artifacts:
+  - path: test.zip
+    name: MyApp
+
+  - path: logs
+    name: test logs
+    type: zip
