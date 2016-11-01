@@ -1,20 +1,20 @@
 version: 1.0.{build}
-platform: x32
+platform: x64
 image: Visual Studio 2015
 os: Visual Studio 2015
 init:
 - cmd: choco upgrade chocolatey
 install:
 - cmd: choco install tinycc
-- cmd: choco install mingw-get
+#- cmd: choco install mingw-get
 before_build:
-#- echo Running cmake...
+- echo Running cmake...
 - cmd: cd src
-#- cmd: cmake -G"Visual Studio 14 2015 Win64"
-#- cmd: tcc -o ejem.exe -run helloworld.c
-- cmd: gcc helloworld.c -o helloworld.exe
+- cmd: cmake -G"Visual Studio 14 2015 Win64"
+- cmd: tcc -o ejem.exe -run helloworld.c
+#- cmd: gcc helloworld.c -o helloworld.exe
 - cmd: dir
 build:
   parallel: true
-  project: src/helloworld.exe
+  project: helloworld.exe
   verbosity: normal
